@@ -1,0 +1,10 @@
+.flexCentt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 90%;
+  width: 90%;
+  justify-content: space-around !important;
+}

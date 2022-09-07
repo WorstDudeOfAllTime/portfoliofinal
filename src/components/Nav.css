@@ -1,0 +1,26 @@
+.flexCent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navBox {
+  height: 15%;
+  width: 100%;
+}
+nav {
+  width: 90%;
+  height: 100%;
+}
+ul {
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  justify-content: space-around !important;
+}
+li {
+  font-size: 1.5vw;
+  font-weight: 900;
+}
+li:hover {
+  cursor: pointer;
+}

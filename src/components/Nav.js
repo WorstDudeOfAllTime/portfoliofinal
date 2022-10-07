@@ -1,21 +1,18 @@
-import "./Nav.css";
-import { useState } from "react";
-const Nav = ({ setPortfolio, portfolio }) => {
+import './Nav.css';
+import { Link } from 'react-router-dom';
+const Nav = ({ portfolio }) => {
   return (
     <div className="navBox flexCent">
       <nav>
         <ul className="flexCent">
           <li
-            style={{ textDecoration: portfolio ? "underline" : "none" }}
-            onClick={() => {
-              setPortfolio(true);
-            }}
+            style={{ textDecoration: portfolio ? 'underline' : 'none' }}
           >
-            PORTFOLIO
+            <Link to="/portfolio"> PORTFOLIO</Link>
           </li>
-          <li>RESUME</li>
-          <li>ABOUT</li>
-          <li>CONTACT</li>
+          <li><Link to="/resume">RESUME</Link></li>
+          <li><Link to="/about">ABOUT</Link></li>
+          <li><Link to="/contact">CONTACT</Link></li>
         </ul>
       </nav>
     </div>

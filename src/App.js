@@ -7,6 +7,7 @@ import myImage from "./me4.png";
 import apiDulette from "./components/img/apiDulette.PNG";
 import restaurantLarge from "./components/img/restaurantLarge.png";
 import idiot from "./components/img/idiot.png";
+import {Routes, Route} from 'react-router-dom';
 import ProjectBox from "./components/ProjectBox";
 
 function App() {
@@ -70,16 +71,13 @@ function App() {
         <Half customClasses="half portfolio-side flex-cent-col">
           <Nav setPortfolio={setPortfolio} />
           <div className="display-box flex-cent-col">
-            {projectArray.map((item) => {
-              return (
-                <ProjectBox
-                  name={item.name}
-                  imgSrc={item.imgSrc}
-                  description={item.description}
-                  link={item.link}
-                />
-              );
-            })}
+            <Routes>
+              <Route path="/"></Route>
+              <Route path="/portfolio"></Route>
+              <Route path="/resume"></Route>
+              <Route path="/about"></Route>
+              <Route path="/contact"></Route>
+            </Routes>
           </div>
         </Half>
       </ContainerBox>

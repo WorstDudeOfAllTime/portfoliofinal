@@ -40,10 +40,14 @@
 }
 .appHeader {
   width: 90%;
-  height: 20%;
+  height: auto;
+  min-height: 20%;
   border-bottom: 2px solid rgba(0, 0, 0, 0.4);
 }
 .appDescription {
   width: 80%;
-  height: 80%;
+  height: auto;
+  min-height: 40%;
+  max-height: 80%;
+  font-size: 1.5vh;
 }

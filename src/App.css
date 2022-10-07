@@ -67,7 +67,7 @@
 .bottom-frame {
   height: 100%;
   width: 100%;
-  position: relative;
+  position: relative; 
 }
 .hire-me {
   height: 130px;
@@ -102,7 +102,14 @@
   justify-content: flex-start;
   overflow-y: auto;
 }
-
+@media screen and (max-width: 1130px) {
+  .hire-me {
+    top: 190px;
+    right: 15px;
+    height: 100px;
+    width: 100px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .half {
     width: 100%;
@@ -114,10 +121,9 @@
   .portfolio-side {
     height: 70%;
   }
-}
-@media screen and (max-width: 1130px) {
   .hire-me {
-    top: 190px;
+    top: 0px;
     right: 15px;
   }
 }
+

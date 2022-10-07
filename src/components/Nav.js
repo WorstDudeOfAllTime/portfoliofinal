@@ -1,11 +1,12 @@
 import "./Nav.css";
 import { useState } from "react";
-const Nav = ({ setPortfolio }) => {
+const Nav = ({ setPortfolio, portfolio }) => {
   return (
     <div className="navBox flexCent">
       <nav>
         <ul className="flexCent">
           <li
+            style={{ textDecoration: portfolio ? "underline" : "none" }}
             onClick={() => {
               setPortfolio(true);
             }}

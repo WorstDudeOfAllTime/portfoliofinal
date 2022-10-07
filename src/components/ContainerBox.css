@@ -1,4 +1,4 @@
-.flexCentt {
+.flexCent {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,4 +7,11 @@
   height: 90%;
   width: 90%;
   justify-content: space-around !important;
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
 }

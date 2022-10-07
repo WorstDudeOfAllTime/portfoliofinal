@@ -1,0 +1,49 @@
+.projectBoxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  min-height: 300px;
+  width: 90%;
+  margin: 10px;
+}
+.boxHalf {
+  height: 100%;
+  border-radius: 1px solid black;
+  display: flex;
+}
+.projectImage {
+  height: auto;
+  max-height: 300px;
+  width: auto;
+  max-width: 359px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.right {
+  width: 40%;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid rgba(0, 0, 0, 0.4);
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.appHeader {
+  width: 90%;
+  height: 20%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+.appDescription {
+  width: 80%;
+  height: 80%;
+}

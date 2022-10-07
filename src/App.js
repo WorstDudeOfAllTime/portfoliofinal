@@ -4,29 +4,40 @@ import ContainerBox from "./components/ContainerBox";
 import Half from "./components/Half";
 import { useState } from "react";
 import myImage from "./me4.png";
-import Resume from "./components/Resume/Resume";
-import ReactImageGallery from "react-image-gallery";
+import apiDulette from "./components/img/apiDulette.PNG";
+import restaurantLarge from "./components/img/restaurantLarge.png";
+import idiot from "./components/img/idiot.png";
+import ProjectBox from "./components/ProjectBox";
 
 function App() {
   const [portfolio, setPortfolio] = useState(false);
-  const images = [
+  const projectArray = [
     {
-      original: "https://picsum.photos/id/1018/1000/600/",
-      thumbnail: "https://picsum.photos/id/1018/250/150/",
+      name: "Worst Restaurant",
+      imgSrc: restaurantLarge,
+      description:
+        "MIT xPro Capstone Project 1/2. A restaurant aggregation application utilizing NextJS and Firestore.",
+      link: "https://restaurant-redux.vercel.app/",
     },
     {
-      original: "https://picsum.photos/id/1015/1000/600/",
-      thumbnail: "https://picsum.photos/id/1015/250/150/",
+      name: "API Dulette",
+      imgSrc: apiDulette,
+      description:
+        "A simple API grabber designed to grab two random APIs from GitHub's Popular API list. The intent is to provide a challenge for user to build an app combining those two APIs.",
+      link: "https://api-dulette.vercel.app/",
     },
     {
-      original: "https://picsum.photos/id/1019/1000/600/",
-      thumbnail: "https://picsum.photos/id/1019/250/150/",
+      name: "What An Idiot",
+      imgSrc: idiot,
+      description:
+        "Had a bad week and decided to have a little fun about it. My idiot face and a plethora of Shakespearen era insults.",
+      link: "https://what-an-idiot.vercel.app/",
     },
   ];
   return (
     <div className="App flex-cent">
       <ContainerBox>
-        <Half customClasses="half">
+        <Half customClasses="half image-side">
           <div
             className="image-display flex-cent"
             style={{
@@ -58,8 +69,17 @@ function App() {
         </Half>
         <Half customClasses="half portfolio-side flex-cent-col">
           <Nav setPortfolio={setPortfolio} />
-          <div className="display-box">
-            <ReactImageGallery items={images} />
+          <div className="display-box flex-cent-col">
+            {projectArray.map((item) => {
+              return (
+                <ProjectBox
+                  name={item.name}
+                  imgSrc={item.imgSrc}
+                  description={item.description}
+                  link={item.link}
+                />
+              );
+            })}
           </div>
         </Half>
       </ContainerBox>

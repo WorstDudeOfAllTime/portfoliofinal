@@ -1,0 +1,12 @@
+.displayBox {
+  height: 100%;
+  width: 95%;
+
+} 
+.contentBox{
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  overflow-y: auto;
+}

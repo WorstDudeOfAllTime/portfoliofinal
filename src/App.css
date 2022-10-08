@@ -80,6 +80,9 @@
   top: 190px;
   right: 35px;
 }
+.hire-me:hover{
+  cursor: pointer;
+}
 .black-wire {
   height: 75%;
   width: 75%;

@@ -1,5 +1,5 @@
 import './Nav.css';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 const Nav = ({ portfolio }) => {
   return (
     <div className="navBox flexCent">
@@ -8,11 +8,9 @@ const Nav = ({ portfolio }) => {
           <li
             style={{ textDecoration: portfolio ? 'underline' : 'none' }}
           >
-            <Link to="/portfolio"> PORTFOLIO</Link>
+            <Link className="link" to="/portfolio">PORTFOLIO</Link>
           </li>
-          <li><Link to="/resume">RESUME</Link></li>
-          <li><Link to="/about">ABOUT</Link></li>
-          <li><Link to="/contact">CONTACT</Link></li>
+          <li><Link className="link" to="/contact">CONTACT</Link></li>
         </ul>
       </nav>
     </div>
@@ -20,3 +18,6 @@ const Nav = ({ portfolio }) => {
 };
 
 export default Nav;
+
+//<li><Link to="/resume">RESUME</Link></li>
+//<li><Link to="/about">ABOUT</Link></li>

@@ -2,10 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
-  min-height: 300px;
+  height: 280px;
   width: 90%;
-  margin: 10px;
+  margin: 15px;
 }
 .boxHalf {
   height: 100%;

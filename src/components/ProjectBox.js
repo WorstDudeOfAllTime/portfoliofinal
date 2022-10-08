@@ -1,19 +1,19 @@
 import "./ProjectBox.css";
 
-const ProjectBox = ({ name, imgSrc, description, link }) => {
+const ProjectBox = ({ project}) => {
   return (
     <div className="projectBoxContainer">
       <div className="boxHalf left">
-        <a href={link} target="blank">
-          <img className="projectImage" src={imgSrc} />
+        <a href={project.link} target="blank">
+          <img className="projectImage" src={project.imgSrc} />
         </a>
       </div>
       <div className="boxHalf right">
         <div className="appHeader">
-          <h2>{name}</h2>
+          <h2>{project.name}</h2>
         </div>
         <div className="appDescription">
-          <p>{description}</p>
+          <p>{project.description}</p>
         </div>
       </div>
     </div>

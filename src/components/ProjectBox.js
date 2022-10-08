@@ -5,7 +5,7 @@ const ProjectBox = ({ project}) => {
     <div className="projectBoxContainer">
       <div className="boxHalf left">
         <a href={project.link} target="blank">
-          <img className="projectImage" src={project.imgSrc} />
+          <img className="projectImage" src={project.imgSrc} alt="project image"/>
         </a>
       </div>
       <div className="boxHalf right">

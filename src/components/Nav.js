@@ -1,16 +1,20 @@
-import './Nav.css';
+import "./Nav.css";
 import { Link } from "react-router-dom";
 const Nav = ({ portfolio }) => {
   return (
     <div className="navBox flexCent">
       <nav>
         <ul className="flexCent">
-          <li
-            style={{ textDecoration: portfolio ? 'underline' : 'none' }}
-          >
-            <Link className="link" to="/portfolio">PORTFOLIO</Link>
+          <li style={{ textDecoration: portfolio ? "underline" : "none" }}>
+            <Link className="link" to="/">
+              PORTFOLIO
+            </Link>
           </li>
-          <li><Link className="link" to="/contact">CONTACT</Link></li>
+          <li>
+            <Link className="link" to="/contact">
+              CONTACT
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

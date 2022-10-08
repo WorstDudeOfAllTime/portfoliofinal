@@ -1,9 +1,9 @@
-import Nav from './Nav';
-import ContainerBox from './ContainerBox';
-import Half from './Half';
-import myImage from './img/me4.png';
-import './Layout.css'
-const Layout = ({children}) => {
+import Nav from "./Nav";
+import ContainerBox from "./ContainerBox";
+import Half from "./Half";
+import myImage from "./img/me4.png";
+import "./Layout.css";
+const Layout = ({ children }) => {
   return (
     <div className="App flex-cent">
       <ContainerBox>
@@ -12,9 +12,9 @@ const Layout = ({children}) => {
             className="image-display flex-cent"
             style={{
               background: `url('${myImage}')`,
-              backgroundPosition: 'center',
-              backgroundSize: 'cover',
-              backgroundRepeat: 'none',
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
             }}
           >
             <div className="name-display">

@@ -31,3 +31,53 @@
   font-size: 1.6vw;
   font-weight: 900;
 }
+@media screen and (max-width: 1130px) {
+  .hire-me {
+    top: 190px;
+    right: 15px;
+    height: 100px;
+    width: 100px;
+  }
+  .black-wire h3 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .what-where {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    width: 100%;
+  }
+  .what,
+  .where,
+  .name-display {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .name-display h1,
+  .what h2,
+  .where h2 {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .half {
+    width: 100%;
+    height: 50%;
+  }
+  .image-side {
+    height: 30%;
+  }
+  .portfolio-side {
+    height: 70%;
+  }
+  .hire-me {
+    top: 0px;
+    right: 15px;
+  }
+}

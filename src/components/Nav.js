@@ -11,10 +11,16 @@ const Nav = ({ portfolio }) => {
             </Link>
           </li>
           <li>
+            <a style={{textDecoration:'none', color:'black'}} target="_blank" href="https://drive.google.com/file/d/1D8__GuYFWGnNwuUs9oK_IIr9ZdPzcMh5/view">
+              RESUME
+            </a>
+          </li>
+          <li>
             <Link className="link" to="/contact">
               CONTACT
             </Link>
           </li>
+
         </ul>
       </nav>
     </div>
@@ -22,6 +28,3 @@ const Nav = ({ portfolio }) => {
 };
 
 export default Nav;
-
-//<li><Link to="/resume">RESUME</Link></li>
-//<li><Link to="/about">ABOUT</Link></li>

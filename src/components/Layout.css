@@ -1,3 +1,32 @@
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .4);
+  position: absolute;
+  z-index: 4;
+  justify-content: center;
+  align-items: center;
+}
+.overlayForm{
+  background-color: whitesmoke;
+  height: 60vh;
+  width: 40vw;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px black;
+}
+.closeMe{
+  width: 90%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end !important;
+  cursor: pointer;
+}
+.formContainer{
+  width: 100%;
+  height: 90%;
+}
+
+
 .name-display {
   font-size: 2.2vw;
   width: 100%;

@@ -10,6 +10,17 @@
   height: 95%;
   align-items: flex-start !important;
 }
+.contentBox li {
+  font-size: 3vw;
+}
 .contentBox li:hover{
   text-decoration: underline;
+}
+@media screen and (max-width: 1000px) {
+  .contentBox li {
+    font-size: 20px;
+  }
+  .contentBox h2 {
+    font-size: 20px !important;
+  }
 }

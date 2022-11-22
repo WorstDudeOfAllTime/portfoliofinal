@@ -10,6 +10,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ProjectDisplay />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path="https://drive.google.com/file/d/1D8__GuYFWGnNwuUs9oK_IIr9ZdPzcMh5/view"/>
         </Routes>
       </Layout>
     </div>

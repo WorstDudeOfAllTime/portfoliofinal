@@ -37,7 +37,7 @@ const ProjectDisplay = () => {
   ];
   return (
     <div className="flex-cent-col displayBox">
-      <h1 style={{ textDecoration: "underline" }}>PORTFOLIO.</h1>
+      <h1 style={{ textDecoration: "underline" }}>PORTFOLIO</h1>
       <div className="contentBox flex-cent-col">
         {projectArray.map((project) => {
           return <ProjectBox project={project} />;

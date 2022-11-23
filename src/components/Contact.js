@@ -5,9 +5,8 @@ const Contact = () => {
       className="flex-cent-col displayBox"
       style={{ height: '100%', width: '100%' }}
     >
-      <h1 style={{ textDecoration: 'underline' }}>CONTACT.</h1>
+      <h1 style={{ textDecoration: 'underline' }}>CONTACT</h1>
       <div className="contentBox flex-cent-col">
-        <h2 style={{ fontSize: '3vw' }}>Email: Krisbert@Krisbert.dev</h2>
         <ul>
           <li>
             <a
@@ -40,6 +39,9 @@ const Contact = () => {
             </a>
           </li>
         </ul>
+        <h2 style={{ fontSize: '2vw', margin: '0px' }}>
+          Email: Krisbert@Krisbert.dev
+        </h2>
       </div>
     </div>
   );

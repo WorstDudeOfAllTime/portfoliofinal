@@ -11,7 +11,7 @@
   align-items: flex-start !important;
 }
 .contentBox li {
-  font-size: 3vw;
+  font-size: 2vw;
 }
 .contentBox li:hover{
   text-decoration: underline;

@@ -2,9 +2,17 @@ import ProjectBox from "./ProjectBox";
 import apiDulette from "./img/apiDulette.PNG";
 import restaurantLarge from "./img/restaurantLarge.png";
 import idiot from "./img/idiot.png";
+import fridgeapp from './img/fridgess.png';
 import "./ProjectDisplay.css";
 const ProjectDisplay = () => {
   const projectArray = [
+    {
+      name: "NEXT UP: Community Fridge Locator",
+      imgSrc: fridgeapp,
+      description:
+        "Current work in progress: Community Fridge/Pantry aggregator with social media/web links.",
+      link: "https://philly-fridge-locator.web.app/"
+    },
     {
       name: "Worst Restaurant",
       imgSrc: restaurantLarge,
